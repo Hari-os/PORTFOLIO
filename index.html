@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haripriya Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f5f5f5; color: #333; }
+    header, section, footer { padding: 20px; max-width: 1000px; margin: auto; }
+    header { background: #6200ea; color: white; text-align: center; padding: 50px 20px; position: relative; }
+    header h1 { font-size: 3em; }
+    header p { font-size: 1.3em; margin-top: 15px; }
+    header img { position: absolute; right: 20px; top: 20px; width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 4px solid white; }
+
+    .section-title { color: #6200ea; font-size: 1.8em; margin-bottom: 15px; }
+
+    .projects, .about, .contact { background: white; margin: 25px 0; border-radius: 10px; padding: 25px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+
+    .project-item { margin-bottom: 20px; display: flex; flex-direction: column; gap: 10px; }
+    .project-item img { width: 100%; max-height: 200px; object-fit: cover; border-radius: 10px; }
+
+    .resume-btn { display: inline-block; padding: 12px 24px; background: #6200ea; color: white; text-decoration: none; border-radius: 5px; margin-top: 20px; transition: 0.3s ease; }
+    .resume-btn:hover { background: #4b00c2; }
+
+    .social-links a { margin-right: 20px; color: #6200ea; text-decoration: none; font-weight: bold; }
+
+    form input, form textarea { width: 100%; padding: 12px; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc; }
+    form button { padding: 12px 25px; background: #6200ea; color: white; border: none; border-radius: 5px; margin-top: 15px; cursor: pointer; }
+    .center{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2em; }
+      header p { font-size: 1em; }
+      header img { width: 70px; height: 70px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/photo.jpg" alt="Profile Image" />
+    <h1>Boddu Haripriya</h1>
+    <p>Multifaceted Developer 🦄 | Java & Python Enthusiast | React Wizard</p>
+  </header>
+   <div class="center">
+  <section class="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-item">
+      <img src="images/to-do-list.jpg" alt="To-Do App Screenshot" />
+      <h3>To-Do List App</h3>
+      <p>Created a React-based application that empowers users to stay on track and boost productivity with a smooth, minimalist task manager.</p>
+    </div>
+    <div class="project-item">
+      <img src="images/tictactoe.jpg" alt="Tic Tac Toe Screenshot" />
+      <h3>Tic-Tac-Toe Game</h3>
+      <p>Designed a strategic, responsive game in React.js with time travel functionality and an elegant UI to demonstrate state management capabilities.</p>
+    </div>
+    <div class="project-item">
+      <img src="images/coffie.jpg" alt="Coffee Machine" />
+      <h3>Virtual Coffee Machine</h3>
+      <p>Built a CLI-based interactive coffee ordering system in Python simulating a real machine with accurate calculations and user input handling.</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2 class="section-title">About Me</h2>
+    <p>
+      Hi! I'm Boddu Haripriya, a passionate developer who loves building websites and solving problems with code. I enjoy turning ideas into real, working projects using tools like HTML, CSS, JavaScript, and React.
+
+I’ve created fun and useful projects like a To-Do List App, a Tic-Tac-Toe game, and even a Virtual Coffee Machine using Python. These helped me learn how to make things that people can really use.
+
+Right now, I’m studying Master of Computer Applications, and I’m always excited to learn new things in tech. I believe that with hard work and curiosity, I can grow every day and create great things.
+
+I’m looking forward to working with smart people and learning even more. Let’s build something amazing together!
+    </p>
+    <a href="haripriyaResume2312(M).pdf" download class="resume-btn">Download My Resume (PDF)</a>
+  </section>
+
+  <section class="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p>Let’s connect and collaborate:</p>
+    <div class="social-links">
+      <a href="mailto:haripriyab2312@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/haripriyaboddu2312" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Hari-os" target="_blank">GitHub</a>
+    </div>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  </div>
+
+  <footer>
+    <p style="text-align: center;">&copy; 2025 Boddu Haripriya. Built with 💻 + ☕ + 🔥</p>
+  </footer>
+</body>
+</html>
